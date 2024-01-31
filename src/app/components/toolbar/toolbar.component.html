@@ -1,6 +1,6 @@
-<mat-toolbar class="header-menu d-flex justify-content-center">
+<mat-toolbar class="header-menu">
   <div
-    class="d-flex justify-content-space-between align-items-center header-content container"
+    class="d-flex justify-content-space-between align-items-center header-content"
   >
     <div class="logo">
       <a routerLink="/home">
@@ -10,6 +10,11 @@
         />
       </a>
     </div>
+    <!--  <button color="primary" mat-button [matMenuTriggerFor]="menu">Menu</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu> -->
     <div class="menu-links">
       <ul>
         <li><a routerLinkActive="active" routerLink="/about">Sobre</a></li>

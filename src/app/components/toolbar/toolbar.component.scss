@@ -1,6 +1,6 @@
 @import "../../../styleGuide.scss";
 .header-menu {
-  padding: 50px 30px;
+  padding: 50px 0px;
   background-color: transparent;
   .logo {
     width: 100%;
@@ -16,7 +16,7 @@
         list-style: none;
         li {
           a {
-            font-size: 20px;
+            font-size: 1.25rem;
             color: $white;
             text-decoration: none;
             &.active {
