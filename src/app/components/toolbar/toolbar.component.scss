@@ -1,0 +1,33 @@
+@import "../../../styleGuide.scss";
+.header-menu {
+  padding: 50px 30px;
+  background-color: transparent;
+  .logo {
+    width: 100%;
+    max-width: 240px;
+  }
+
+  .header-content {
+    width: 100%;
+    .menu-links {
+      ul {
+        display: flex;
+        gap: 42px;
+        list-style: none;
+        li {
+          a {
+            font-size: 20px;
+            color: $white;
+            text-decoration: none;
+            &.active {
+              color: $green;
+            }
+            &:hover {
+              color: $green;
+            }
+          }
+        }
+      }
+    }
+  }
+}
