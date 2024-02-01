@@ -20,24 +20,44 @@
     </div>
   </div>
 
-  <div class="about-section d-flex align-items-center gap-30">
-    <div class="about-content">
-      <span class="title">{{ "Quem vós fala?" | uppercase }}</span>
-      <span class="subtitle">Hello world, ops Eve!</span>
+  <div class="about-section">
+    <div class="d-flex align-items-center gap-30">
+      <div class="about-content">
+        <span class="title">{{ "Quem vós fala?" | uppercase }}</span>
+        <span class="subtitle">Hello world, ops Eve!</span>
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi quis
-        phasellus arcu dictum sed consequat sed lacus. Diam at maecenas tellus
-        facilisis. Faucibus urna, ultrices sed amet curabitur auctor suspendisse
-        etiam dolor. Nullam est donec semper nibh laoreet.
-      </p>
-      <p class="mt-30">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi quis
-        phasellus arcu dictum..
-      </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi quis
+          phasellus arcu dictum sed consequat sed lacus. Diam at maecenas tellus
+          facilisis. Faucibus urna, ultrices sed amet curabitur auctor
+          suspendisse etiam dolor. Nullam est donec semper nibh laoreet.
+        </p>
+        <p class="mt-30">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi quis
+          phasellus arcu dictum..
+        </p>
+      </div>
+      <div class="avatar-image">
+        <img src="../../../assets/me.jpg" />
+      </div>
     </div>
-    <div class="avatar-image">
-      <img src="../../../assets/me.jpg" />
+    <div>
+      <span class="title">{{ "Me segue nas redes!" | uppercase }}</span>
+
+      <div class="d-flex align-items-center icons gap-30 mt-20">
+        <a href="http://www.linkedin.com/in/evelyn-helena" target="_blank">
+          <fa-icon [icon]="faLinkedin" class="color-icon icon"></fa-icon>
+        </a>
+        <a href="https://www.instagram.com/evelynhelena13/" target="_blank">
+          <fa-icon [icon]="faInstagramSquare" class="color-icon icon"></fa-icon>
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCWp8rdXvy9nCX4MhSsfXJbw"
+          target="_blank"
+        >
+          <fa-icon [icon]="faYoutube" class="color-icon icon"></fa-icon>
+        </a>
+      </div>
     </div>
   </div>
 </div>

@@ -61,5 +61,18 @@
         max-width: 380px;
       }
     }
+
+    .color-icon {
+      color: $purple;
+      font-size: 35px;
+    }
+
+    .icon {
+      transition: filter 0.2s;
+      cursor: pointer;
+      &:hover {
+        filter: brightness(0.9);
+      }
+    }
   }
 }
