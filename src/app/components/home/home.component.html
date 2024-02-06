@@ -24,7 +24,7 @@
     <div class="d-flex align-items-center gap-30">
       <div class="about-content">
         <span class="title">{{ "Quem vós fala?" | uppercase }}</span>
-        <span class="subtitle">Hello world, ops Eve!</span>
+        <span class="subtitle">Hello world, ops {{ dataUser.name }}!</span>
 
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi quis
@@ -38,7 +38,10 @@
         </p>
       </div>
       <div class="avatar-image">
-        <img src="../../../assets/me.jpg" />
+        <img
+          [src]="dataUser.avatar_url"
+          alt="Mulher negra de pele clara, segurando um celular na mão de capinha azul, vestindo uma camisa de botão marrom claro"
+        />
       </div>
     </div>
     <div>
@@ -56,6 +59,9 @@
           target="_blank"
         >
           <fa-icon [icon]="faYoutube" class="color-icon icon"></fa-icon>
+        </a>
+        <a [href]="dataUser.html_url" target="_blank">
+          <fa-icon [icon]="faSquareGithub" class="color-icon icon"></fa-icon>
         </a>
       </div>
     </div>
