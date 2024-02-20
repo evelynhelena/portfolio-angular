@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faLinkedin, faInstagramSquare, faYoutube, faSquareGithub } from '@fortawesome/free-brands-svg-icons';
+import { faBook, faCode, faLaptop, faUsers } from "@fortawesome/free-solid-svg-icons";
 import { UserService } from './services/user.service';
 import { UserProps } from './types';
 @Component({
@@ -12,6 +13,10 @@ export class HomeComponent implements OnInit {
   faInstagramSquare = faInstagramSquare;
   faYoutube = faYoutube;
   faSquareGithub = faSquareGithub;
+  faBook = faBook;
+  faUsers = faUsers;
+  faLaptop = faLaptop;
+  faCode = faCode;
 
   dataUser!: UserProps
 

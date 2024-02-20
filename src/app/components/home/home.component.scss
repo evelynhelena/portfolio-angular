@@ -64,12 +64,16 @@
 
     .color-icon {
       color: $purple;
-      font-size: 35px;
+    }
+
+    .color-icon-green {
+      color: $green;
     }
 
     .icon {
       transition: filter 0.2s;
       cursor: pointer;
+      font-size: 35px;
       &:hover {
         filter: brightness(0.9);
       }

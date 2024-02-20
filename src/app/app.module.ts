@@ -12,13 +12,17 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
+import { MatCardModule } from '@angular/material/card';
+import { CardComponent } from './components/home/components/card/card.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
-    HomeComponent
+    HomeComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatButtonModule,
     MatIconModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
